@@ -1,13 +1,13 @@
 {
-  "name": "@bitgenetics/bitlib-template",
+  "name": "@bitgenetics/cli-tools",
   "version": "1.0.2",
-  "description": "various utilities",
+  "description": "cli tool wrappers to aid in a platform agnostic tools set",
   "author": "michael benjamin <turbofoxwave@gmail.com>",
-  "license": "SEE LICENSE IN license.md",
-  "main": "lib/utils",
+  "license": "MIT",
+  "main": "lib/index",
   "private": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "directories": {
     "lib": "lib",
@@ -22,19 +22,29 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "tsc": "tsc",
-    "build": "rm -rdf lib && tsc"
+    "build": "rm -rdf lib && tsc",
+    "rm": "node ./lib/rm.js",
+    "copy": "node ./lib/copy-dir.js",
+    "mkdir": "node ./lib/mkdir.js"
   },
   "devDependencies": {
-    "@types/node": "^12.7.8",
-    "typescript": "^3.5.3",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/github": "^7.2.0",
-    "@semantic-release/npm": "^7.0.9"
+    "@semantic-release/npm": "^7.0.9",
+    "@types/node": "^12.7.8",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
   },
-  "gitHead": "94fd3aa6e80717c0b1414d819c42785abf1fab90",
-  "dependencies": {
-    "@types/lodash": "^4.14.141",
-    "lodash": "4.17.14"
-  }
+  "dependencies": {}
 }

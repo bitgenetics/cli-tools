@@ -1,6 +1,6 @@
-# `bitlib-template`
+# `@bitgenetics/cli-tools`
 
-> TODO: a tempalte lib for bitgenetics
+> TODO: describe
 
 ## Usage
 
