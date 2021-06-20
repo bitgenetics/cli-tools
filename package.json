@@ -1,0 +1,40 @@
+{
+  "name": "@bitgenetics/bitlib-template",
+  "version": "1.0.2",
+  "description": "various utilities",
+  "author": "michael benjamin <turbofoxwave@gmail.com>",
+  "license": "SEE LICENSE IN license.md",
+  "main": "lib/utils",
+  "private": false,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "package.json",
+    "yarn.lock"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tsc": "tsc",
+    "build": "rm -rdf lib && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "typescript": "^3.5.3",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/github": "^7.2.0",
+    "@semantic-release/npm": "^7.0.9"
+  },
+  "gitHead": "94fd3aa6e80717c0b1414d819c42785abf1fab90",
+  "dependencies": {
+    "@types/lodash": "^4.14.141",
+    "lodash": "4.17.14"
+  }
+}
