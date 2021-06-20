@@ -6,7 +6,7 @@ on:
     branches:
       - main
 jobs:
-  update-documentation:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository (Latest)
@@ -19,8 +19,8 @@ jobs:
         with:
           always-auth: true
           node-version: 12
-          registry-url: "https://npm.pkg.github.com/"
-          scope: "@bitgenetics"
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@bitgenetics'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
       - name: dump
