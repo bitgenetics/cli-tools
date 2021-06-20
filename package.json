@@ -23,9 +23,14 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "tsc": "tsc",
     "build": "rm -rdf lib && tsc",
-    "rm": "node ./lib/rm.js",
+    "rm": "node ./lib/rmdir.js",
     "copy": "node ./lib/copy-dir.js",
     "mkdir": "node ./lib/mkdir.js"
+  },
+  "bin": {
+    "rm-dir": "./lib/rmdir.js",
+    "copy-dir": "./lib/copy-dir.js",
+    "mk-dir": "./lib/mkdir.js"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
