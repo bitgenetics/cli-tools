@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * @author Mike Benjamin
  * @description supply os agnostic directory creation command for use in build process

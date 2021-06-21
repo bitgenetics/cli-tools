@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * @author Mike Benjamin
  * @description supply os agnostic directory copy for build processes
